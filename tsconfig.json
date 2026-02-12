@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": false,
+    "baseUrl": ".",
+    "paths": {
+      "@utils": ["./src/utils/*"],
+      "@events": ["./src/events/*"],
+      "@commands": ["./src/commands/*"],
+      "@services": ["./src/services/*"],
+      "@interfaces": ["./src/interfaces/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
