@@ -14,11 +14,13 @@
     "emitDecoratorMetadata": false,
     "baseUrl": ".",
     "paths": {
-      "@utils": ["./src/utils/*"],
-      "@events": ["./src/events/*"],
-      "@commands": ["./src/commands/*"],
-      "@services": ["./src/services/*"],
-      "@interfaces": ["./src/interfaces/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@enums/*": ["./src/enums/*"],
+      "@errors/*": ["./src/errors/*"],
+      "@events/*": ["./src/events/*"],
+      "@commands/*": ["./src/commands/*"],
+      "@services/*": ["./src/services/*"],
+      "@interfaces/*": ["./src/interfaces/*"]
     }
   },
   "include": ["src/**/*"],
