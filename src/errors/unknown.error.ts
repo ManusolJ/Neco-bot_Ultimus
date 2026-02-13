@@ -3,14 +3,13 @@ import ErrorCode from "@enums/error-code.enum";
 import ErrorSeverity from "@enums/error-severity.enum";
 import AppErrorInterface from "@interfaces/configuration/app-error.interface";
 
-export default class ValidationError extends AppError {
-  constructor(message: string, context?: Record<string, unknown>) {
+export default class UnknownError extends AppError {
+  constructor(message: string, cause?: Error) {
     let options: AppErrorInterface = {
+      cause,
       message,
-      context,
-      userMessage: message,
-      severity: ErrorSeverity.LOW,
-      code: ErrorCode.INVALID_ARGUMENT,
+      code: ErrorCode.UNKNOWN_ERROR,
+      severity: ErrorSeverity.MEDIUM,
     };
 
     super(options);

@@ -1,10 +1,10 @@
-import { ErrorCode } from "@enums/error-code.enum";
-import { ErrorSeverity } from "@enums/error-severity.enum";
+import ErrorCode from "@enums/error-code.enum";
+import ErrorSeverity from "@enums/error-severity.enum";
 import AppErrorInterface from "@interfaces/configuration/app-error.interface";
 
 const DEFAULT_ERROR_MESSAGE = "Un error desconocido ha ocurrido.";
 
-export class AppError extends Error {
+export default class AppError extends Error {
   public readonly code: ErrorCode;
   public readonly timestamp: Date;
   public readonly userMessage: string;

@@ -1,6 +1,6 @@
-import { AppError } from "@errors/app.error";
-import { ErrorCode } from "@enums/error-code.enum";
-import { ErrorSeverity } from "@enums/error-severity.enum";
+import AppError from "@errors/app.error";
+import ErrorCode from "@enums/error-code.enum";
+import ErrorSeverity from "@enums/error-severity.enum";
 import AppErrorInterface from "@interfaces/configuration/app-error.interface";
 
 export default class PermissionError extends AppError {
