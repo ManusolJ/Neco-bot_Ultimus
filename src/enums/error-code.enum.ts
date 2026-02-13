@@ -1,4 +1,4 @@
-export enum ErrorCode {
+enum ErrorCode {
   // General errors
   UNKNOWN_ERROR = "UNKNOWN_ERROR",
   INTERNAL_ERROR = "INTERNAL_ERROR",
@@ -25,3 +25,5 @@ export enum ErrorCode {
   DB_QUERY = "DB_QUERY",
   DB_CONNECTION = "DB_CONNECTION",
 }
+
+export default ErrorCode;

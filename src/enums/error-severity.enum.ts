@@ -1,4 +1,4 @@
-export enum ErrorSeverity {
+enum ErrorSeverity {
   // Low severity = Log and inform the user, but continue execution.
   LOW = "Low",
 
@@ -8,3 +8,5 @@ export enum ErrorSeverity {
   // High severity = Log, inform the user, and halt execution or require immediate attention.
   HIGH = "High",
 }
+
+export default ErrorSeverity;
