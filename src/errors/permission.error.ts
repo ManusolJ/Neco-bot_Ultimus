@@ -17,7 +17,7 @@ export default class PermissionError extends AppError {
       ? "No tengo los permisos necesarios para ejecutar este comando."
       : "No tienes los permisos necesarios para ejecutar este comando.";
 
-    let options: AppErrorInterface = {
+    const options: AppErrorInterface = {
       context: context,
       message: message,
       code: ERROR_CODE,

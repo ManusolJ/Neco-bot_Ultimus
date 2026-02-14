@@ -8,7 +8,7 @@ export default class TimeoutError extends AppError {
     const userMessage: string =
       "La operación ha tardado demasiado tiempo y ha sido cancelada. Por favor, inténtalo de nuevo más tarde.";
 
-    let options: AppErrorInterface = {
+    const options: AppErrorInterface = {
       message,
       context,
       code: ErrorCode.TIMEOUT,

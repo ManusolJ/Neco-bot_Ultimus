@@ -8,7 +8,7 @@ export default class ExternalApiError extends AppError {
     const message = `Error al comunicarse con el servicio externo ${serviceName}, motivo: ${cause ? cause.message : "desconocido"}`;
     const userMessage = `Ocurrió un error al comunicarse con el servicio ${serviceName}!`;
 
-    let options: AppErrorInterface = {
+    const options: AppErrorInterface = {
       cause: cause,
       message: message,
       context: { serviceName },

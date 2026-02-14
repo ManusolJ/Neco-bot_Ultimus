@@ -5,7 +5,7 @@ import AppErrorInterface from "@interfaces/configuration/app-error.interface";
 
 export default class ValidationError extends AppError {
   constructor(message: string, context?: Record<string, unknown>) {
-    let options: AppErrorInterface = {
+    const options: AppErrorInterface = {
       message,
       context,
       userMessage: message,

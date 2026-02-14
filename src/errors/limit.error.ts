@@ -8,7 +8,7 @@ export default class RateLimitError extends AppError {
     const message = `Rate limit exceeded. Retry after ${retryAfterMs} ms.`;
     const userMessage = `Has alcanzado el límite de uso. Por favor, inténtalo de nuevo después de ${retryAfterMs ? Math.ceil(retryAfterMs / 1000) : "unos"} segundos.`;
 
-    let options: AppErrorInterface = {
+    const options: AppErrorInterface = {
       message: message,
       userMessage: userMessage,
       code: ErrorCode.RATE_LIMITED,

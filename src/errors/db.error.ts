@@ -7,7 +7,7 @@ export default class DatabaseError extends AppError {
   constructor(message: string, cause?: Error) {
     const userMessage = "Ocurrió un error al acceder a la base de datos.";
 
-    let options: AppErrorInterface = {
+    const options: AppErrorInterface = {
       cause,
       message,
       userMessage: userMessage,
