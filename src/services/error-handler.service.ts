@@ -8,7 +8,7 @@ import ErrorOriginType from "@enums/error-origin.enum";
 
 const ALERT_CHANNEL: string = process.env.ALERT_CHANNEL ?? "";
 
-export default class ErrorHandlerService {
+export class ErrorHandlerService {
   private readonly alertChannel: string;
 
   constructor() {
@@ -199,3 +199,5 @@ export default class ErrorHandlerService {
     }
   }
 }
+
+export default new ErrorHandlerService();
