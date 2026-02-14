@@ -8,7 +8,7 @@ import ErrorOriginType from "@enums/error-origin.enum";
 
 const ALERT_CHANNEL: string = process.env.ALERT_CHANNEL ?? "";
 
-export class ErrorHandlerService {
+export default class ErrorHandlerService {
   private readonly alertChannel: string;
 
   constructor() {
@@ -20,7 +20,9 @@ export class ErrorHandlerService {
 
     this.logErrorToConsole(normalizedError);
 
-    if (normalizedError.severity >= ErrorSeverity.MEDIUM) {
+    const isLowOrMediumSeverity = ErrorSeverity.LOW || ErrorSeverity.MEDIUM;
+
+    if (isLowOrMediumSeverity) {
       await this.notifyUser(normalizedError, origin);
     } else {
       await this.alertDev(normalizedError, origin);
