@@ -1,5 +1,5 @@
-import { ErrorCode } from "@enums/error-code.enum";
-import { ErrorSeverity } from "@enums/error-severity.enum";
+import ErrorCode from "@enums/error-code.enum";
+import ErrorSeverity from "@enums/error-severity.enum";
 
 export default interface AppErrorInterface {
   cause?: Error;
