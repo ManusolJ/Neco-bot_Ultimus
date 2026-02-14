@@ -16,6 +16,7 @@
     "paths": {
       "@utils/*": ["./src/utils/*"],
       "@enums/*": ["./src/enums/*"],
+      "@typings/*": ["src/typings/*"],
       "@errors/*": ["./src/errors/*"],
       "@events/*": ["./src/events/*"],
       "@commands/*": ["./src/commands/*"],
